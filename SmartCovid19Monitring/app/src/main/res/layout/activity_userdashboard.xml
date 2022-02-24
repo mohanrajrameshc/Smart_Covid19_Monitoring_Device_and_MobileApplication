@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".User.Userdashboard">
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@color/colorBlueJeans"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/winterfall"
+            android:text="User Dashboard"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+
+                android:gravity="bottom"
+                />
+
+            <ImageView
+                android:onClick="logout"
+                android:layout_width="95dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+
+                android:gravity="bottom"
+                android:src="@drawable/logout" />
+            <ImageView
+                android:onClick="exit"
+                android:layout_width="95dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+
+                android:gravity="bottom"
+                android:src="@drawable/exitt" />
+
+        </LinearLayout>
+     </LinearLayout>
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/qrimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="133dp"
+                    android:layout_gravity="center"
+
+                    android:layout_margin="20dp"
+                    android:gravity="bottom" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/balloon"
+                        android:gravity="center"
+                        android:text="Your UID" />
+
+                    <TextView
+                        android:id="@+id/uid"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+
+                        android:text="n1F1A25xp0NK7MnvvFWNTAYRRHx2"
+                        android:fontFamily="@font/balloon"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorGrapeFruit"
+                    android:onClick="Thermometer"
+                    >
+
+                    <ImageView
+                        android:layout_width="94dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_thermometer"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorGrapeFruitDark"
+                        android:text="Thermometer"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:fontFamily="@font/winterfall"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:onClick="timeline"
+                    android:background="@color/colorBitterSweet"
+                    >
+
+                    <ImageView
+                        android:layout_width="114dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_timeline_white_18dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorBitterSweetDark"
+                        android:text="Timeline"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/winterfall"
+                        android:textColor="@color/colorWhite"
+                        />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <!-- Second Row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+
+                    android:orientation="vertical"
+                    android:background="@color/colorGrass"
+                    android:onClick="quarentinetlist"
+                    >
+
+                    <ImageView
+                        android:layout_width="103dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_list_white_18dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorGrassDark"
+                        android:text="Quarentine record"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/winterfall"
+                        android:textColor="@color/colorWhite"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:onClick="changepassword"
+                    android:background="@color/colorBlueJeans"
+                    >
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_vpn_key_white_18dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorBlueJeansDark"
+                        android:text="Change Password"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/winterfall"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            <!-- End Second Row-->
+            <!-- Third Row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical"
+                    android:onClick="help"
+                    android:background="@color/colorMint"
+                    >
+
+                    <ImageView
+                        android:layout_width="132dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_help_24px"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorMintDark"
+                        android:text="Help"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/winterfall"
+                        android:textColor="@color/colorWhite"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+            <!-- End Third Row-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

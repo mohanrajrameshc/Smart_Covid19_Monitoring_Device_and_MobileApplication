@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Admin.AddQuranitine"
+
+    android:background="@color/colorGrapeFruit">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD to Quarantine"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/balloon"
+            android:background="@color/colorLavander"
+            android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/balloon"
+
+                android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/balloon"
+
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quarantine center "
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/balloon"
+
+                android:layout_margin="10dp"/>
+            <Spinner
+                android:id="@+id/spinner"
+                android:fontFamily="@font/winterfall"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/bt_uifb"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_margin="20dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:text="User ID:"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent" />
+                <TextView
+
+                    android:id="@+id/tvuid"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:text="Alert date:"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent" />
+                <TextView
+
+                    android:id="@+id/alertdate"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:text="Name:"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent" />
+                <TextView
+
+                    android:id="@+id/tvname"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:text="Gender:"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent" />
+                <TextView
+
+                    android:id="@+id/tvgender"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:text="Ip Address"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent" />
+                <TextView
+
+                    android:id="@+id/tvip"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:text="Address:"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent" />
+                <TextView
+
+                    android:id="@+id/tvaddress"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:text="Email:"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent" />
+                <TextView
+
+                    android:id="@+id/tvemail"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:text="Phone number:"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent" />
+                <TextView
+
+                    android:id="@+id/tvphone"
+                    android:layout_margin="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:typeface="monospace"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/addqurantine"
+                    android:layout_width="match_parent"
+                    android:text="Add"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/winterfall"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/bg_ui"
+                    android:layout_height="match_parent"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

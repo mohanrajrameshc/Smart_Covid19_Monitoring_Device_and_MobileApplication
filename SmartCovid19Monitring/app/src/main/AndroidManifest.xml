@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.mohanraj.smartcovid19monitring">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+
+
+        </activity>
+        <activity android:name=".User.Help" />
+        <activity android:name=".User.QuarantinedRecord" />
+        <activity android:name=".Admin.Scan" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".Admin.Report.ReleasedReport" />
+        <activity android:name=".Admin.Report.QuarantinedReport" />
+        <activity android:name=".User.UserHistory" />
+        <activity android:name=".Admin.Report.AlertReport" />
+        <activity android:name=".Admin.AddReleasedList" />
+        <activity android:name=".Test" />
+        <activity android:name=".Admin.QrCodeScanner" />
+        <activity android:name=".User.UserMonitorring" />
+        <activity android:name=".Admin.AddQuranitine" />
+        <activity android:name=".Admin.AdminChangePassword" />
+        <activity android:name=".Admin.Realizedlist" />
+        <activity android:name=".Admin.QuarantineList" />
+        <activity android:name=".Admin.AlertList" />
+        <activity android:name=".User.Userdashboard" >
+
+        </activity>
+        <activity android:name=".Admin.AddAdmin" />
+        <activity android:name=".User.UserActivity" />
+        <activity android:name=".Admin.AdminActivity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Admin.AdminActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@color/colorBlueJeans"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/winterfall"
+            android:text="Admin Dashboard"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+
+                android:gravity="bottom"
+                />
+
+            <ImageView
+                android:onClick="logout"
+                android:layout_width="95dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+
+                android:gravity="bottom"
+                android:src="@drawable/logout" />
+            <ImageView
+                android:onClick="exit"
+                android:layout_width="95dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+
+                android:gravity="bottom"
+                android:src="@drawable/exitt" />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:src="@drawable/ic_admin_panel_settings_white_18dp"
+                android:background="@color/colorBitterSweetDark"
+                android:layout_gravity="center"
+                android:gravity="bottom"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorGrapeFruit"
+                    android:onClick="alertlist"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/warning"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorGrapeFruitDark"
+                        android:text="Alert list"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:fontFamily="@font/winterfall"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:onClick="quarentinetlist"
+                    android:background="@color/colorBitterSweet"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_list_white_18dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorBitterSweetDark"
+                        android:text="Quarantine List"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/winterfall"
+                        android:textColor="@color/colorWhite"
+                        />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <!-- Second Row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorGrass"
+                    android:onClick="releasiedlist"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_list_release_18dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorGrassDark"
+                        android:text="Realised list"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/winterfall"
+                        android:textColor="@color/colorWhite"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:onClick="addadmin"
+                    android:background="@color/colorBlueJeans"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_admin_panel_settings_white_18dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorBlueJeansDark"
+                        android:text="Add admin"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/winterfall"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            <!-- End Second Row-->
+            <!-- Third Row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorPinkRose"
+                    android:onClick="scan"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_code_scanner_auto_focus_on"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorPinkRoseDark"
+                        android:text="Scan"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:fontFamily="@font/winterfall"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:onClick="changepassword"
+                    android:background="@color/colorMint"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_vpn_key_white_18dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorMintDark"
+                        android:text="Change password"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/winterfall"
+                        android:textColor="@color/colorWhite"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+            <!-- End Third Row-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

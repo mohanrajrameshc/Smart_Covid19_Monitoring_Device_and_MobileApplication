@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".User.Help"
+
+    android:background="@color/colorGrassDark">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Help!"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/balloon"
+                android:background="@color/colorLavander"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Covid HelpLine Numbers"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textColor="@color/colorGrapeFruitDark"
+                android:fontFamily="@font/balloon"
+
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Central Helpline Number"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/balloon"
+
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/central"
+                android:layout_width="match_parent"
+                android:text="Call"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/winterfall"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/bg_ui"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="State Helpline Number"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/balloon"
+
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:text="Call"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/winterfall"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/bg_ui"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/balloon"
+
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:text="Mail"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/winterfall"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/bg_ui"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "998209277760",
+    "firebase_url": "https://smartcovid19monitoring-888bd.firebaseio.com",
+    "project_id": "smartcovid19monitoring-888bd",
+    "storage_bucket": "smartcovid19monitoring-888bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998209277760:android:3b75ddb168b35799e3f4a5",
+        "android_client_info": {
+          "package_name": "com.mohanraj.smartcovid19monitring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998209277760-mj30obi76eo3f533m1ieohlctci3q3t2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmUnsBehRQgjfLzAM-0jtWuYWOq2cOgDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "998209277760-mj30obi76eo3f533m1ieohlctci3q3t2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
